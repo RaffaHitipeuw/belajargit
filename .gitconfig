@@ -1,0 +1,14 @@
+[user]
+    email = raffahitipeuw@gmail.com
+    name = raffahitipeuw
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+[core]
+    editor = code --wait
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
