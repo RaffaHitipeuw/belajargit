@@ -44,8 +44,31 @@ git log : untuk melihat seluruh riwayat commit
 git log --oneline : sama semerti git log namun lebih ringkas
 git show (code hasnya) : untuk melihat perubahan pada commit
 git diff (code hash 1) (code hash 2) : untuk membandingkan 2 commit secara spesifik
+git branch → liat semua branch
+git branch --show-current → liat branch aktif
+git branch <nama> → bikin branch baru
+git branch -m <nama_baru> → rename branch
+git branch -d <nama> → hapus branch
+git switch <branch> → pindah branch (versi baru)
+git checkout <branch> → pindah branch (versi lama, tapi masih dipake)
+git merge <branch> → gabung branch ke branch sekarang
+git merge --abort → batalin merge (kalau conflict & mau kabur 😅)
+git add .
+git commit
+git cherry-pick <commitId> → ambil commit tertentu dari branch lain
+git tag <nama> <commitId> → bikin tag
+git tag -l → list tag
+git checkout <tag> → balik ke snapshot tag
+git tag -d <nama> → hapus tag
+git stash push -m "pesan" → simpan perubahan sementara
+git stash list → liat stash
+git stash show <id> → liat isi stash
+git stash apply <id> → balikin stash
+git stash drop <id> → hapus stash
+git stash clear → hapus semua stash
 
 catatan :
+
 - difftool 83
 - reset
 
